@@ -13,9 +13,48 @@
         // "Married":"true"};
         // var student = [{"name":"xyz","age":13,"roll_no":100},{"name":"pqr","age":12,"roll_no":110},{"name":"abc","age":14,"roll_no":120}];
         // var student = {"firstname":"virat","lastname":"kholi","address":{"Street":"plt-6","state":"delhi"}};
-        var user={"name":["ABC","PQR","XYZ"],"age":"28","address":["t1","t2",{"t3":"give again"}]}
-        console.log(user.address[2].t3);  
-    </script>
+        // var user={"name":["ABC","PQR","XYZ"],"age":"28","address":["t1","t2",{"t3":"give again"}]}
+        // const a = {"DataStructure":[{"Name":"tree","course":"intro","content":["1","B]","C"]},
+        //                 {"Name":"tree1","course":"intro","content":["1","B","C"]}]
+        //             };
+        // console.log(a.DataStructure[1].Name);  
+        // var s1= '{"firstname":"AHSU","lastname":"patel","Studentcode":7}';
+        // var student = JSON.parse(s1);
+                    //    JSON.stringify(s1) if no '' on {}
+        // document.write(student.firstname);
+        // function fun()
+        // {
 
+        //     var practise = '{"name":"Atharva","age":20,"DOB":"14-04-2004"}';
+        //     var prac = JSON.parse(practise);
+        //     document.write(prac.name+" "+prac.age+" "+prac.DOB);
+        // }
+        function fun()
+        {
+            var student=[{"name":"Harsh","Height":165},
+            {"name":"darshit","Height":166},
+            {"name":"Mihir","Height":160}];
+            var temp =0
+            for(var i =0;i<student.length;i++)
+            {
+               for(var j = i+1;j<student.length;j++)
+               {
+                    if(student[i].Height>student[j].Height)
+                    {
+                        temp = student[i];
+                        student[i] = student[j];
+                        student[j] = temp;
+                    }
+               } 
+            }
+            for(var i =0;i<student.length;i++)
+            {
+                document.write(student[i].name+" "+student[i].Height+"<br>");
+            }
+        }
+    </script>
+    
+    <button onclick="fun()">Click Me</button>
 </body>
 </html>
+<!-- write a script to define two json pjb name div1 anf div2 having an array to store name od students this name should be sorted alphabetically in the obj and should store in one jsn obj -->
