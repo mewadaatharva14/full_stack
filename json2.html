@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     const sub = {"FSD":[{"topic":"html","course":"beginer","content":["tags","table","form"]},
+    // {"topic":"css","course":"beginer","content":["tags","table","form"]}]};
+    // var temp = "<table border='2px solid red'>";
+    //     temp+="<tr>";
+    //     for(x in sub.FSD[0])
+    //     {
+    //         temp+="<th>"+x+"</th>";
+    //     }
+    //     temp+="</tr>";
+    //     for(x in sub.FSD)
+    //     {
+    //         temp+="<tr>";
+    //         for(y in sub.FSD[x])
+    //         {
+    //             temp+="<td>"+sub.FSD[x][y]+"</td>";
+    //         }
+    //         temp+="</tr>";
+    //     }
+    //     temp+="</table>";
+    //     document.write(temp);
+    function callback(sum)
+    {
+        document.getElementById("demo").innerHTML=sum;
+    }
+    function total(value1,value2,callback)
+    {
+        sum = value1+value2;
+        callback(sum);
+    }
+    total(25,15,callback);
+    </script>
+    <!-- write a script to display dum of two numbers which are pass as an argument oin function name total the sum should display in any hmtl element us callback as 3rd argument in total function -->
+</body>
+</html>
