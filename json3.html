@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a =0;
+        // var b=0;
+        // var c=0;
+        // function add()
+        // {
+        //     c= a+b;
+        //     console.log(c);
+        // }
+        
+        // setInterval(()=>{add(a++,b++)},1000);
+        // write a node js code which dispaly hello ith increasing font size in interval of 11 secnd in blue color when font size reach 250px it should stop
+        size = 15;
+        function add()
+        {
+            obj = document.getElementById("demo");
+            obj.style.fontSize = size+"px";
+            obj.style.color = "blue";
+            if(size<=50)
+            {
+
+                size++;
+            }
+        }
+        setInterval(add(),100);
+
+        // core module
+        // fs,http,os,url,path
+        // var ps = require("fs")
+        // read -> ps.readfilesync("filename","utf-8");
+        // crete -> ps.writefilesync("filename",data);
+        // update -> ps.appendfilesync("filename",data);
+        // delete -> ps.unlinksync("filename");
+        // rename -> ps.renamesync("oldname","fileNmae");
+        // cratedirectory ->ps.mkdirsync("foldername");
+        // remove directiory -> ps.rmdirsync("Foldername")
+        // 
+        // alway run this in .js file
+        // var ps = require("fs")
+        // ps.writefilesync("Hello.txt","helloworld");
+        // var data = ps.readfilesync("Hello.txt","utf-8");
+        // console.log(data);
+        // console.log("programme ended");
+    </script>
+</body>
+</html>
